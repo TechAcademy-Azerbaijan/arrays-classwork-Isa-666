@@ -4,7 +4,7 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-   let a = result.input.split(" ")
+  let a = result.input.split(" ")
     let max = 0;
 
     let arr = [];
@@ -15,13 +15,14 @@ prompt.get('input', function (err, result) {
         }
 
     }
-    
+    let sum=0;
     for (let i = 1; i < arr.length; i++) {
 
-        if (max == parseInt(a[i])) {
+        if (max === parseInt(a[i])) {
         
-           max+=max
+           sum=parseInt(sum+max);
+
         }
-    } console.log(max);
+    } console.log(sum);
   
 });
