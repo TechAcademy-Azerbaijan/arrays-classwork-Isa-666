@@ -4,9 +4,8 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-       let n=result.input.split(" ");
-  
-    let arr1=[14,17,16,3,7,19,9];
+ 
+    let arr1=[14,17,16,3,7,19,9,];
 let arr2=[];
     for (let i = 1; i < arr1.length; i++) {
         if (arr1[i]%2!==0) {
@@ -14,6 +13,6 @@ let arr2=[];
             
         }
         
-    }console.log(arr2);
+    }console.log(arr2.join(' '));
   
 });
