@@ -4,9 +4,8 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-   let n=result.input.split(" ")
-let arr=[1,2,3,4]
+    let n=result.input.split("")
+let arr=n;
 arr.reverse();
   console.log(arr);
-  
 });
