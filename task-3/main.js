@@ -8,6 +8,6 @@ prompt.get('input', function (err, result) {
     let b = arr1.map((i) => i + 2);
     let arr2 = [-4]
     let arr3 = b.concat(arr2);
-    console.log(arr3);
+    console.log(arr3.join(' '));
   
 });
