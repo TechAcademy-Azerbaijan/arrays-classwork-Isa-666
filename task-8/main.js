@@ -4,7 +4,7 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-           let a = result.input.split(" ")
+     let a = result.input.split(" ")
     let max = 0;
 
     let arr = [];
