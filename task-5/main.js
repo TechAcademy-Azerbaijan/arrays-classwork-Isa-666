@@ -4,11 +4,9 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
- let arr=[1,2,3,4]
-    
-
-    arr.unshift(arr[3]);
-    arr.pop(arr.length-1)
-    
-    console.log(arr.join(' '));
+ let num=result.input.split(' ')
+    let b=num[num.length-1]
+num.pop();
+ num.unshift(b);
+console.log(num.join(' '));
 });
