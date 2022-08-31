@@ -4,11 +4,10 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-    var arr = [5, 9, 3, 4, 6];
-    
-    var m = Math.max(...arr);
-    
-    console.log(m)
+    let num = result.input.split(' ');
+
+    let max = Math.max(...num)
+    console.log(max);
 
   
 });
