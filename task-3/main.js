@@ -4,10 +4,17 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-       const arr1 = [1, 2, 3];
-    let b = arr1.map((i) => i + 2);
-    let arr2 = [-4]
-    let arr3 = b.concat(arr2);
-    console.log(arr3.join(' '));
+     let num = result.input.split(" "); //1 2 3 -4
+
+    for (let i = 0; i < num.length; i++) {
+        
+        if (num[i] > 0) {
+            num[i]=parseInt(num[i]) + 2
+        } else if (num[i] < 0) {
+num[i] = parseInt(num[i])
+        }
+
+    } 
+    console.log(num.join(" "));
   
 });
